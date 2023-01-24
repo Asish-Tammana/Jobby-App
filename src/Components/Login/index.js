@@ -5,8 +5,8 @@ import './index.css'
 
 class Login extends Component {
   state = {
-    username: '',
-    password: '',
+    username: 'henry',
+    password: 'henry_the_developer',
     errorMsg: '',
   }
 
@@ -61,7 +61,7 @@ class Login extends Component {
   }
 
   render() {
-    const {givenUsername, givenPassword, errorMsg} = this.state
+    const {username, password, errorMsg} = this.state
 
     const jwtToken = Cookies.get('jwt_token')
     if (jwtToken !== undefined) {
@@ -81,7 +81,7 @@ class Login extends Component {
             type="text"
             id="usernameInput"
             placeholder="Username"
-            value={givenUsername}
+            value={username}
             onChange={this.updateUsername}
             className="input-box"
             autoComplete="off"
@@ -92,7 +92,7 @@ class Login extends Component {
             type="password"
             id="passwordInput"
             placeholder="Password"
-            value={givenPassword}
+            value={password}
             onChange={this.updatePassword}
             className="input-box"
           />
@@ -101,6 +101,7 @@ class Login extends Component {
             Login
           </button>
           <p className="error-msg">{errorMsg}</p>
+          <p>Sample credentials are loaded here</p>
         </form>
       </div>
     )

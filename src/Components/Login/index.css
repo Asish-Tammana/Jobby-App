@@ -55,6 +55,7 @@ label {
   background-color: #6366f1;
   color: #ffffff;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .error-msg {

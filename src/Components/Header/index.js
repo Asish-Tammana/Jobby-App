@@ -24,21 +24,22 @@ class Header extends Component {
               alt="website logo"
             />
           </Link>
-          <div className="horizontal">
+          <div className="nav-symbols-container">
             <Link to="/" className="link-decoration">
               <p>Home</p>
             </Link>
             <Link to="/jobs" className="link-decoration">
               <p>Jobs</p>
             </Link>
+
+            <button
+              type="button"
+              className="logout-button"
+              onClick={this.logoutClicked}
+            >
+              Logout
+            </button>
           </div>
-          <button
-            type="button"
-            className="logout-button"
-            onClick={this.logoutClicked}
-          >
-            Logout
-          </button>
         </div>
 
         <div className="mobile-nav-bar">

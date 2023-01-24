@@ -71,12 +71,16 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 20%;
 }
 
 @media (max-width: 767px) {
   .navbar-container {
     display: none;
+  }
+
+  .nav-symbols-container {
+    width: 50%;
   }
 }
 
